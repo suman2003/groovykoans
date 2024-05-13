@@ -1,0 +1,24 @@
+org.groovykoans.koan01:
+  test01_AssertionsAndSomeSyntax:
+    assertion: true
+    hello: Hello
+  test02_GStrings:
+    name: George
+    greeting: Hello ${name}, how are you?
+    math: The result of 4 + 4 is ${4 + 4}
+    result: The size of the string '${greeting}' is ${greeting.size()}
+  test03_MapsInGroovy:
+    map:
+      right: derecha
+      left: izquierda
+    result: ${map['right']} + ${map['left']}
+  test04_Lists:
+    groovyList:
+      - King
+      - Queen
+      - Prince
+    updatedGroovyList: ${groovyList.plus(1, 'Queen')}
+  test05_ElvisAndSafeNavigation:
+    groovyDisplayName: ${player.firstName ?: player.username}
+    groovyCity: ${player?.address?.city}
+    message: Hello ${userService.loggedInUser?.firstName ?: 'Anonymous'}!
